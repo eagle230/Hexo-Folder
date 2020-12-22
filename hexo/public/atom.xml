@@ -18,6 +18,30 @@
   
   <entry>
     <title>个人能力提升计划</title>
+    <link href="https://github.com/eagle230/nate.github.io/2020/12/22/plan1/"/>
+    <id>https://github.com/eagle230/nate.github.io/2020/12/22/plan1/</id>
+    <published>2020-12-22T12:20:54.464Z</published>
+    <updated>2020-12-22T12:05:31.498Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h1><h2 id="1-整理和编写开源代码库"><a href="#1-整理和编写开源代码库" class="headerlink" title="1.整理和编写开源代码库"></a>1.整理和编写开源代码库</h2><p>目标：方便以后开发移植和帮助自己深入理解实现原理和提高编程能力。</p><ul><li><input disabled="" type="checkbox"> ring buffer 【环形缓冲区】</li><li><input disabled="" type="checkbox"> AT指令【AT发送和解析框架】</li><li><input disabled="" type="checkbox"> GPS Parser【GPS解析库】</li><li><input disabled="" type="checkbox"> log通用打印【方便移植、可设置log等级、可类实现shell功能的通用库】</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot; title=&quot;计划&quot;&gt;&lt;/a&gt;计划&lt;/h1&gt;&lt;h2 id=&quot;1-整理和编写开源代码库&quot;&gt;&lt;a href=&quot;#1-整理和编写开源代码库&quot; class=&quot;headerlink&quot; title=&quot;1</summary>
+      
+    
+    
+    
+    <category term="plan" scheme="https://github.com/eagle230/nate.github.io/categories/plan/"/>
+    
+    
+    <category term="plan" scheme="https://github.com/eagle230/nate.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人能力提升计划</title>
     <link href="https://github.com/eagle230/nate.github.io/2020/12/22/plan/"/>
     <id>https://github.com/eagle230/nate.github.io/2020/12/22/plan/</id>
     <published>2020-12-22T12:04:52.629Z</published>
