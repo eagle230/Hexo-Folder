@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nate Personal Blog</title>
+  
+  
+  <link href="https://github.com/eagle230/nate.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/eagle230/nate.github.io/"/>
+  <updated>2020-12-22T12:05:31.498Z</updated>
+  <id>https://github.com/eagle230/nate.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人能力提升计划</title>
+    <link href="https://github.com/eagle230/nate.github.io/2020/12/22/plan/"/>
+    <id>https://github.com/eagle230/nate.github.io/2020/12/22/plan/</id>
+    <published>2020-12-22T12:04:52.629Z</published>
+    <updated>2020-12-22T12:05:31.498Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h1><h2 id="1-整理和编写开源代码库"><a href="#1-整理和编写开源代码库" class="headerlink" title="1.整理和编写开源代码库"></a>1.整理和编写开源代码库</h2><p>目标：方便以后开发移植和帮助自己深入理解实现原理和提高编程能力。</p><ul><li><input disabled="" type="checkbox"> ring buffer 【环形缓冲区】</li><li><input disabled="" type="checkbox"> AT指令【AT发送和解析框架】</li><li><input disabled="" type="checkbox"> GPS Parser【GPS解析库】</li><li><input disabled="" type="checkbox"> log通用打印【方便移植、可设置log等级、可类实现shell功能的通用库】</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot; title=&quot;计划&quot;&gt;&lt;/a&gt;计划&lt;/h1&gt;&lt;h2 id=&quot;1-整理和编写开源代码库&quot;&gt;&lt;a href=&quot;#1-整理和编写开源代码库&quot; class=&quot;headerlink&quot; title=&quot;1</summary>
+      
+    
+    
+    
+    <category term="plan" scheme="https://github.com/eagle230/nate.github.io/categories/plan/"/>
+    
+    
+    <category term="plan" scheme="https://github.com/eagle230/nate.github.io/tags/plan/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Githuh Pages + Hexo 搭建个人博客</title>
+    <link href="https://github.com/eagle230/nate.github.io/2020/12/22/Githuh%20Pages%20+%20Hexo/"/>
+    <id>https://github.com/eagle230/nate.github.io/2020/12/22/Githuh%20Pages%20+%20Hexo/</id>
+    <published>2020-12-22T07:08:30.090Z</published>
+    <updated>2020-12-22T07:26:24.934Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Githuh-Pages-Hexo-搭建个人博客"><a href="#Githuh-Pages-Hexo-搭建个人博客" class="headerlink" title="Githuh Pages + Hexo 搭建个人博客"></a>Githuh Pages + Hexo 搭建个人博客</h1><h2 id="本地git配置"><a href="#本地git配置" class="headerlink" title="本地git配置"></a>本地git配置</h2><h3 id="配置本地git的用户信息"><a href="#配置本地git的用户信息" class="headerlink" title="配置本地git的用户信息"></a>配置本地git的用户信息</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;Nate&quot;</span> </span><br><span class="line">git config --global user.email <span class="string">&quot;287770626@qq.com&quot;</span> </span><br></pre></td></tr></table></figure><h3 id="生成ssh密钥文件"><a href="#生成ssh密钥文件" class="headerlink" title="生成ssh密钥文件"></a>生成ssh密钥文件</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;287770626@qq.com&quot;</span></span><br></pre></td></tr></table></figure><p>期间会让你选择保存的目录，推荐使默认文件名，那么就会生成 id_rsa 和 id_rsa.pub 两个秘钥文件。<br>接着又会提示你输入两次密码（该密码是你push文件的时候要输入的密码，而不是github管理者的密码），当然，你也可以不输入密码，直接按回车。那么push的时候就不需要输入密码，直接提交到github上了。所以就是三个回车即可。</p><h3 id="配置github的ssh"><a href="#配置github的ssh" class="headerlink" title="配置github的ssh"></a>配置github的ssh</h3><p>找到本地用户里面的id_rsa.pub，打开并且在Github Seting里面设置好ssh。</p><h3 id="测试git与github关联情况"><a href="#测试git与github关联情况" class="headerlink" title="测试git与github关联情况"></a>测试git与github关联情况</h3><p>执行命令：ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;</a></p><h2 id="创建github-pages-仓库"><a href="#创建github-pages-仓库" class="headerlink" title="创建github pages 仓库"></a>创建github pages 仓库</h2><p>创建一个github page仓库，名字格式必须为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">username.github.io</span><br></pre></td></tr></table></figure><h2 id="克隆仓库到本地"><a href="#克隆仓库到本地" class="headerlink" title="克隆仓库到本地"></a>克隆仓库到本地</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:eagle230&#x2F;nate.github.io.git</span><br></pre></td></tr></table></figure><h2 id="安装Hexo和Nodejs"><a href="#安装Hexo和Nodejs" class="headerlink" title="安装Hexo和Nodejs"></a>安装Hexo和Nodejs</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>1、Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)<br>2、Git</p><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>1.新建个blog目录，在此处执行cmd，</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-cli -g </span><br></pre></td></tr></table></figure><p>开始安装hexo<br>2.输入npm install安装必备的组件<br>3.hexo g 生成静态<br>4.hexo s 开启服务<br>5.打开<a href="http://localhost:4000/">http://localhost:4000</a><br>6.新建一篇博客，在cmd执行命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post “hello world”</span><br></pre></td></tr></table></figure><p>7.在生成以及部署文章之前，需要安装一个扩展：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>8.编辑根目录下_config.yml文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:linton6&#x2F;linton.github.io.git # 填写自己的仓库地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>9.加载博客样式文件 (搭建的时候遇到的坑)</p><p>需要修改_config.yml文件中的url地址和根目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url：是github Page给我们分配的网址</span><br><span class="line">root：是搭建该博客的仓库名</span><br></pre></td></tr></table></figure><p>10.更改主题<br>github下载好主题XXX后放在themes目录下，然后编辑站点的_config.yml中的theme: XXX<br>11.更改网页图标（更改完整路径，遇到的坑）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:cofess&#x2F;hexo-theme-pure.git themes&#x2F;pure</span><br></pre></td></tr></table></figure><p>更改主题中</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">favicon: https:&#x2F;&#x2F;eagle230.github.io&#x2F;nate.github.io&#x2F;favicon.png</span><br></pre></td></tr></table></figure><p>12.hexo g ，生成新的静态网页文件。<br>13.执行hexo d 上传到github上。<br>14.打开<a href="https://eagle230.github.io/nate.github.io/%E5%B0%B1%E7%9C%8B%E5%88%B0%E4%BA%86%E7%BD%91%E9%A1%B5%E3%80%82">https://eagle230.github.io/nate.github.io/就看到了网页。</a></p><h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>直接在port文件里面添加md格式的文件即可。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">categories:</span><br><span class="line">  - 文章分类</span><br><span class="line">tags:</span><br><span class="line">  - 文章标签</span><br><span class="line">toc: true # 是否启用内容索引</span><br></pre></td></tr></table></figure><p>参考链接：</p><p>[]: <a href="https://blog.csdn.net/linton1/article/details/90137367">https://blog.csdn.net/linton1/article/details/90137367</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Githuh-Pages-Hexo-搭建个人博客&quot;&gt;&lt;a href=&quot;#Githuh-Pages-Hexo-搭建个人博客&quot; class=&quot;headerlink&quot; title=&quot;Githuh Pages + Hexo 搭建个人博客&quot;&gt;&lt;/a&gt;Githuh Pages</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://github.com/eagle230/nate.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://github.com/eagle230/nate.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
